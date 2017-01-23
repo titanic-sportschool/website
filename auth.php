@@ -14,14 +14,16 @@
 
     $password = sha1($password, false);
 
-    $sql = "SELECT * FROM logindata WHERE email='$username' AND password = '$password' LIMIT 1";
+    $sql = "SELECT * FROM Login WHERE Email='$username' AND Password = '$password' LIMIT 1";
     $query = mysqli_query($db, $sql);
     $row = mysqli_fetch_array($query);
-    $id = $row['ID'];
+    $id = $row['User_ID'];
+    $User_role = $row['User_role_ID'];
 
     if(count($row) > 0){
       $_SESSION['username'] = $username;
-      $_SESSION['ID'] = $id;
+      $_SESSION['User_ID'] = $id;
+      $_SESSION['User_role'] = $User_role;
       header("Location: index.php?content=Homepage");
     } else {
       header("Location: /playground/");

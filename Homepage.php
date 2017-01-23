@@ -5,36 +5,9 @@
     <div class="side">
       <nav>
         <ul>
-          <li>
-            <form class="MenuButton" action="index.php?content=Mail" method="POST">
-              <button class="NavButton" type="submit" name="mail">Contact staff</button>
-            </form>
-          </li>
-          <li>
-            <form class="MenuButton" action="" method="POST">
-              <button class="NavButton" type="submit" name="">Activity</button>
-            </form>
-          </li>
-          <li>
-            <form class="MenuButton" action="index.php?content=Profile" method="POST">
-              <button class="NavButton" type="submit" name="">My profile</button>
-            </form>
-          </li>
-          <li>
-            <form class="MenuButton" action="" method="POST">
-              <button class="NavButton" type="submit" name="">"PlaceHolder"</button>
-            </form>
-          </li>
-          <li>
-            <form class="MenuButton" action="" method="POST">
-              <button class="NavButton" type="submit" name="">"PlaceHolder"</button>
-            </form>
-          </li>
-          <li>
-            <form class="MenuButton" action="" method="POST">
-              <button class="NavButton" type="submit" name="">"PlaceHolder"</button>
-            </form>
-          </li>
+          <?php
+            include("link.php");
+          ?>
         </ul>
         <div class="DropMenu">
           menu
@@ -80,7 +53,7 @@
 
     </div>
 
-    <form class="MenuButton" action="index.php?content=Logout" method="POST">
+    <form class="LogoutButton" action="index.php?content=Logout" method="POST">
       <button class="NavButton" type="submit" name="logout">Logout</button>
     </form>
 
