@@ -57,16 +57,35 @@ img.avatar{
   border: 0;
   margin: 0 0 15px;
   padding: 15px;
-  border-bottom: 1px solid #2196F3;
+  border-bottom: 1px solid #BDBDBD;
   box-sizing: border-box;
   font-size: 14px;
   -webkit-transition: background 0.5s ease;
   transition: background 0.5s ease;
 }
 
-input:focus{
-  background: ;
+.bar {
+	position: relative;
+	display: block;
+	width: 100%;
 }
+
+.bar:before, .bar:after {
+	content: '';
+	height: 2px;
+	width: 0;
+	bottom: 15px;
+	position: absolute;
+	background: #2196F3;
+	transition: all 0.2s ease;
+}
+
+.bar:before { left: 50%; }
+
+.bar:after { right: 50%; }
+
+input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
+
 
 /* Homepage Style */
 
@@ -89,14 +108,14 @@ input:focus{
 }
 
 .content{
-  padding-top: 30px;
+  padding-top: 10px;
   padding-bottom: 30px;
 }
 
 /** Homepage menu style **/
 
-.MenuButton{
-  width: auto;
+.LogoutButton{
+  width: 20%;
   display: inline-block;
 }
 
@@ -104,13 +123,14 @@ input:focus{
   transition: width 0.5s ease-in-out;
 }
 
-.NavButton:hover{
-  background: #72CE52;
+a{
+  text-decoration: none;
+  color: #2196F3;
 }
 
 nav ul{
   overflow: hidden;
-  padding: 0;
+  padding: 30px;
   margin: 0;
   text-align: center;
   transition: max-height 0.3s ease;
@@ -118,6 +138,12 @@ nav ul{
 
 nav ul li{
   display: inline-block;
+  padding: 14px;
+  transition: background 0.5s ease;
+}
+
+nav ul li:hover{
+  background: #f2f2f2;
 }
 
 .DropMenu{
@@ -147,7 +173,7 @@ nav ul li{
   padding: 15px;
   box-sizing: border-box;
   font-size: 14px;
-  border-bottom: 2px solid #2196F3;
+  border-bottom: 2px solid #BDBDBD;
   -webkit-transition: background 0.5s ease;
   transition: background 0.5s ease;
 }
@@ -205,8 +231,25 @@ nav ul li{
   transition: width 0.5s ease-in-out;
 }
 
+.ButtonRight span{
+  transition: padding 0.5s;
+}
+
+.ButtonRight i{
+  vertical-align: middle;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-bottom: 3px;
+  transition: 0.3s;
+}
+
+.ButtonRight:hover i{
+  padding-left: 15px;
+}
+
 .ButtonLeft button{
   width: 100%;
+  padding: 18px;
 }
 
 .ButtonRight button{
@@ -221,7 +264,4 @@ body {
 
 /* TESTING AREA */
 
-.info{
-  width: 100%;
-  margin-bottom: 30px;
-}
+/*
