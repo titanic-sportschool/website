@@ -1,0 +1,57 @@
+@media screen and (max-width:960px){
+  .HomeDiv{
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .home{
+    display: table-cell;
+  }
+
+  .content{
+    padding: 0;
+  }
+
+  .side{
+    margin-bottom: 15px;
+  }
+
+  .mail{
+    height: 400px;
+  }
+
+  .ButtonLeft{
+    width: 30%;
+    display: inline-block;
+  }
+
+  .ButtonRight{
+    width: 30%;
+    display: inline-block;
+    float: right;
+  }
+
+  .MenuButton{
+    width: 100%;
+  }
+
+  .NavButton{
+    text-align: left;
+  }
+
+  nav ul{
+    max-height: 0;
+  }
+
+  .showing{
+    max-height: 30em;
+  }
+
+  nav ul li{
+    width: 100%;
+  }
+
+  .DropMenu{
+    display: block;
+  }
+}

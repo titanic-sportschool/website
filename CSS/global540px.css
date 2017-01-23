@@ -1,0 +1,29 @@
+@media screen and (max-width:540px){
+  .loginPage{
+    width: 100%;
+    padding-top: 2%;
+    height: auto;
+  }
+
+  .loginform{
+    width: 70%;
+  }
+
+  .home{
+    padding: 25px;
+  }
+
+  .mail{
+    height: 250px;
+  }
+
+  .ButtonLeft{
+    width: 100%;
+    display: inline-block;
+  }
+
+  .ButtonRight{
+    width: 100%;
+    display: inline-block;
+  }
+}
