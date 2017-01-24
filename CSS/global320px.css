@@ -1,9 +1,5 @@
 @media screen and (max-width:320px){
-  .Home_div{
-    width: 310px;
-  }
-
-  .Login_page{
+  .Home_div, .Login_page{
     width: 310px;
   }
 }

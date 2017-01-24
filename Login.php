@@ -8,11 +8,11 @@
     <form action="index.php?content=Authenticate" method="POST">
       <div>
 
-        <input type="text" placeholder="E-mail" name="username" autofocus/></span><span class="Bar"></span>
+        <input type="text" placeholder="E-mail" name="username" autofocus></span><span class="Bar"></span>
       </div>
 
       <div>
-        <input type="password" placeholder="Password" name="password"/></span><span class="Bar"></span>
+        <input type="password" placeholder="Password" name="password"></span><span class="Bar"></span>
       </div>
 
       <button type="submit" name="login">Login</button>

@@ -1,11 +1,11 @@
 @media screen and (max-width:540px){
-  .login_page{
+  .Login_page{
     width: 100%;
     padding-top: 2%;
     height: auto;
   }
 
-  .login_form{
+  .Login_form{
     width: 70%;
   }
 
@@ -17,13 +17,14 @@
     height: 250px;
   }
 
-  .Button_left{
+  .Button_left, .Button_right{
     width: 100%;
     display: inline-block;
   }
 
-  .Button_right{
+  .New_user_form .Button_left, .New_user_form .Button_right{
     width: 100%;
     display: inline-block;
   }
+
 }

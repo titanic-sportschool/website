@@ -1,4 +1,8 @@
-<?php include("RequireLogin.php") ?>
+<?php
+
+  include("RequireLogin.php")
+
+?>
 
 <div class="Home_div">
   <div class="Home">
