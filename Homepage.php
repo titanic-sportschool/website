@@ -1,22 +1,23 @@
 <?php include("RequireLogin.php") ?>
 
-<div class="HomeDiv">
-  <div class="home">
-    <div class="side">
+<div class="Home_div">
+  <div class="Home">
+    <div class="Side">
       <nav>
         <ul>
           <?php
-            include("link.php");
+            include("Link.php");
           ?>
+          <a href="index.php?content=Logout"><li>Logout</li></a>
         </ul>
-        <div class="DropMenu">
-          menu
-          <img src="IMG/menu.png" class="MenuIcon">
+        <div class="Drop_menu">
+          <img src="IMG/menu.png">
+            menu
         </div>
       </nav>
     </div>
 
-    <div class="content">
+    <div class="Content">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices ultricies
         tellus, ut dignissim ligula lobortis auctor. Vivamus lobortis elementum viverra.
         Phasellus placerat et mauris nec consequat. Integer aliquam erat in eros lobortis, at
@@ -53,15 +54,11 @@
 
     </div>
 
-    <form class="LogoutButton" action="index.php?content=Logout" method="POST">
-      <button class="NavButton" type="submit" name="logout">Logout</button>
-    </form>
-
   </div>
 </div>
 
 <script>
-  $('.DropMenu').on('click', function(){
-    $('nav ul').toggleClass('showing');
+  $('.Drop_menu').on('click', function(){
+    $('nav ul').toggleClass('Showing');
   })
 </script>

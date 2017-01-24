@@ -18,8 +18,8 @@
       case $opperator:
         echo'
 
-          <a href="index.php?content=Homepage"><li>Custommers</li></a>
-          <a href="index.php?content=Homepage"><li>*PLACEHOLDER*</li></a>
+          <a href="index.php?content=Homepage"><li>Customers</li></a>
+          <a href="index.php?content=CustomerAdd"><li>Add new</li></a>
           <a href="index.php?content=Homepage"><li>*PLACEHOLDER*</li></a>';
 
         break;

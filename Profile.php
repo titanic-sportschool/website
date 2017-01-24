@@ -1,8 +1,14 @@
-<div class="HomeDiv">
-  <div class="home">
-    <div class="info">
+<?php
+
+  include('RequireLogin.php')
+
+?>
+
+<div class="Home_div">
+  <div class="Home">
+    <div>
       <?php
-        include('db.php');
+        include('DB.php');
         $user = $_SESSION['User_ID'];
 
         $sql = "SELECT * FROM User WHERE ID='$user'";
@@ -21,8 +27,8 @@
       ?>
     </div>
 
-    <form class="ButtonLeft" action="" method="POST">
-      <button onclick="history.go(-1);return true;">Back</button>
+    <form class="Button_left" action="index.php?content=Homepage" method="POST">
+      <button type="submit" name="back">Back</button>
     </form>
 
   </div>

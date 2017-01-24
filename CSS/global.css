@@ -2,13 +2,13 @@
 
 /* Login Style */
 
-.loginPage{
+.Login_page{
   width: 360px;
   padding: 8% 0 0;
   margin: auto;
 }
 
-.loginform{
+.Login_form{
   position: relative;
   z-index: 1;
   background: #FFFFFF;
@@ -19,18 +19,18 @@
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
-.imgcontainer{
+.Img_container{
   text-align: center;
   margin: 0px 0 12px 0;
 }
 
-img.avatar{
+img.Avatar{
   width: 90%;
   margin-bottom: 24px;
   border-radius: 50%;
 }
 
-.loginform button{
+.Login_form button{
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
@@ -45,12 +45,12 @@ img.avatar{
   cursor: pointer;
 }
 
-.loginform button:hover{
+.Login_form button:hover{
   background: #42A5F5;
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
 }
 
-.loginform input{
+.Login_form input{
   font-family: "Roboto", sans-serif;
   outline: 0;
   width: 100%;
@@ -64,13 +64,13 @@ img.avatar{
   transition: background 0.5s ease;
 }
 
-.bar {
+.Bar {
 	position: relative;
 	display: block;
 	width: 100%;
 }
 
-.bar:before, .bar:after {
+.Bar:before, .Bar:after {
 	content: '';
 	height: 2px;
 	width: 0;
@@ -80,16 +80,16 @@ img.avatar{
 	transition: all 0.2s ease;
 }
 
-.bar:before { left: 50%; }
+.Bar:before { left: 50%; }
 
-.bar:after { right: 50%; }
+.Bar:after { right: 50%; }
 
-input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
+input:focus ~ .Bar:before, input:focus ~ .Bar:after { width: 50%; }
 
 
 /* Homepage Style */
 
-.HomeDiv{
+.Home_div{
   width: 960px;
   padding: 6% 0 0;
   margin: auto;
@@ -97,7 +97,7 @@ input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
   display: flex;
 }
 
-.home{
+.Home{
   position: relative;
   z-index: 1;
   background: #FFFFFF;
@@ -107,21 +107,12 @@ input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
-.content{
+.Content{
   padding-top: 10px;
   padding-bottom: 30px;
 }
 
 /** Homepage menu style **/
-
-.LogoutButton{
-  width: 20%;
-  display: inline-block;
-}
-
-.NavButton{
-  transition: width 0.5s ease-in-out;
-}
 
 a{
   text-decoration: none;
@@ -139,14 +130,16 @@ nav ul{
 nav ul li{
   display: inline-block;
   padding: 14px;
-  transition: background 0.5s ease;
+  transition: all 0.2s ease;
+  font-size: 14px;
 }
 
 nav ul li:hover{
   background: #f2f2f2;
+  /*box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.24);*/
 }
 
-.DropMenu{
+.Drop_menu{
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   color: #2196F3;
@@ -154,17 +147,17 @@ nav ul li:hover{
   padding: 15px 10px;
   margin-top: 5px;
   display: none;
-  transition: background 0.5s ease;
+  transition: background 0.7s ease;
 }
 
-.DropMenu img{
+.Drop_menu img{
   float: right;
   margin-top: -3px;
 }
 
 /* Homepage input style */
 
-.home input{
+.Home input{
   font-family: "Roboto", sans-serif;
   outline: 0;
   width: 100%;
@@ -173,12 +166,11 @@ nav ul li:hover{
   padding: 15px;
   box-sizing: border-box;
   font-size: 14px;
-  border-bottom: 2px solid #BDBDBD;
-  -webkit-transition: background 0.5s ease;
+  border-bottom: 1px solid #BDBDBD;
   transition: background 0.5s ease;
 }
 
-.HomeDiv button {
+.Home_div button {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
@@ -190,18 +182,18 @@ nav ul li:hover{
   margin-bottom: 5px;
   color: #2196F3;
   font-size: 14px;
-  -webkit-transition: background 0.5s ease;
-  transition: background 0.5s ease;
+  transition: all 0.2s ease;
   cursor: pointer;
 }
 
-.HomeDiv button:hover{
+.Home_div button:hover{
   background: #f2f2f2;
+  /*box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.24);*/
 }
 
 /* Mailpage Style */
 
-.mail{
+.Mail{
   font-family: "Roboto", sans-serif;
   outline: 0;
   background: white;
@@ -213,29 +205,33 @@ nav ul li:hover{
   box-sizing: border-box;
   font-size: 14px;
   resize: none;
-  -webkit-transition: background 0.5s ease;
   transition: background 0.5s ease;
   transition: height 0.5s ease-in-out;
 }
 
-.ButtonLeft{
+.Button_left{
   width: 20%;
   display: inline-block;
   transition: width 0.5s ease-in-out;
 }
 
-.ButtonRight{
+.Button_left button{
+  width: 100%;
+  padding: 18px;
+}
+
+.Button_right{
   width: 20%;
   display: inline-block;
   float: right;
   transition: width 0.5s ease-in-out;
 }
 
-.ButtonRight span{
+.Button_right span{
   transition: padding 0.5s;
 }
 
-.ButtonRight i{
+.Button_right i{
   vertical-align: middle;
   font-size: 20px;
   padding-left: 10px;
@@ -243,16 +239,11 @@ nav ul li:hover{
   transition: 0.3s;
 }
 
-.ButtonRight:hover i{
+.Button_right:hover i{
   padding-left: 15px;
 }
 
-.ButtonLeft button{
-  width: 100%;
-  padding: 18px;
-}
-
-.ButtonRight button{
+.Button_right button{
   width: 100%;
 }
 

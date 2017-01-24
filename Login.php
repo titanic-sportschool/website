@@ -1,16 +1,23 @@
-<div class="loginPage">
-  <div class="loginform">
-    <div class="imgcontainer">
-      <img src="IMG/avatar.png" class="avatar">
+<div class="Login_page">
+  <div class="Login_form">
+
+    <div class="Img_container">
+      <img src="IMG/avatar.png" class="Avatar">
     </div>
-    <form action="index.php?content=auth" method="POST">
-      <div class="">
-        <input type="text" placeholder="E-mail" name="username" autofocus/></span><span class="bar"></span>
+
+    <form action="index.php?content=Authenticate" method="POST">
+      <div>
+
+        <input type="text" placeholder="E-mail" name="username" autofocus/></span><span class="Bar"></span>
       </div>
-      <div class="">
-        <input type="password" placeholder="Password" name="password"/></span><span class="bar"></span>
+
+      <div>
+        <input type="password" placeholder="Password" name="password"/></span><span class="Bar"></span>
       </div>
+
       <button type="submit" name="login">Login</button>
+
     </form>
+
   </div>
 </div>

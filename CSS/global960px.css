@@ -1,42 +1,37 @@
 @media screen and (max-width:960px){
-  .HomeDiv{
+  .Home_div{
     font-size: 14px;
     width: 100%;
   }
 
-  .home{
+  .Home{
     display: table-cell;
   }
 
-  .content{
+  .Content{
     padding: 0;
   }
 
-  .side{
+  .Side{
     margin-bottom: 15px;
   }
 
-  .mail{
+  .Mail{
     height: 400px;
   }
 
-  .ButtonLeft{
+  .Button_left{
     width: 30%;
     display: inline-block;
   }
 
-  .ButtonRight{
+  .Button_right{
     width: 30%;
     display: inline-block;
     float: right;
   }
 
-  .LogoutButton{
-    margin-top: 20px;
-    width: 100%;
-  }
-
-  .showing{
+  .Showing{
     max-height: 30em;
   }
 
@@ -52,7 +47,7 @@
     width: 100%;
   }
 
-  .DropMenu{
+  .Drop_menu{
     display: block;
   }
 }

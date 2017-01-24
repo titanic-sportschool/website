@@ -1,28 +1,28 @@
 @media screen and (max-width:540px){
-  .loginPage{
+  .login_page{
     width: 100%;
     padding-top: 2%;
     height: auto;
   }
 
-  .loginform{
+  .login_form{
     width: 70%;
   }
 
-  .home{
+  .Home{
     padding: 25px;
   }
 
-  .mail{
+  .Mail{
     height: 250px;
   }
 
-  .ButtonLeft{
+  .Button_left{
     width: 100%;
     display: inline-block;
   }
 
-  .ButtonRight{
+  .Button_right{
     width: 100%;
     display: inline-block;
   }

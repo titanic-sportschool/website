@@ -9,14 +9,18 @@
     <link rel="stylesheet" type="text/css" href="CSS/global540px.css">
     <link rel="stylesheet" type="text/css" href="CSS/global320px.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   </head>
 
   <body>
-    <div class="">
-      <?php include("navigation.php") ?>
+    <div>
+      <?php
+
+        include("Navigation.php")
+
+      ?>
     </div>
   </body>
 

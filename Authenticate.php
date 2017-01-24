@@ -2,7 +2,7 @@
 
   if(isset($_POST['login'])){
 
-    include_once("db.php");
+    include_once("DB.php");
     $username = strip_tags($_POST['username']);
     $password = strip_tags($_POST['password']);
 
