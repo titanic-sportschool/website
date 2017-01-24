@@ -27,9 +27,9 @@
       ?>
     </div>
 
-    <form class="Button_left" action="index.php?content=Homepage" method="POST">
-      <button type="submit" name="back">Back</button>
-    </form>
+    <div class="Button_left">
+      <button onclick="goBack()">Back</button>
+    </div>
 
   </div>
 </div>
