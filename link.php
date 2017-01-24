@@ -1,5 +1,7 @@
 <?php
 
+  include('RequireLogin.php');
+
   if(isset($_SESSION['User_role'])){
 
     switch ($_SESSION['User_role']) {
@@ -18,9 +20,9 @@
       case $opperator:
         echo'
 
-          <a href="index.php?content=Homepage"><li>Customers</li></a>
-          <a href="index.php?content=CustomerAdd"><li>Add new</li></a>
-          <a href="index.php?content=Homepage"><li>*PLACEHOLDER*</li></a>';
+          <a href="index.php?content=Homepage"><li>All customers</li></a>
+          <a href="index.php?content=CustomerAdd"><li>Add new user</li></a>
+          <a href="index.php?content=Homepage"><li>*__PLACEHOLDER__*</li></a>';
 
         break;
         default:
