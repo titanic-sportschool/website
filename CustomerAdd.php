@@ -39,12 +39,14 @@
             <div class="check"><div class="inside"></div></div>
           </li>
         </ul>
-      </div><input type="text" name="email" placeholder="E-mail" required></span><span class="Bar"></span><div>
-
+      </div>
+      
+      <div>
+        <input type="email" name="email" placeholder="E-mail" required></span><span class="Bar"></span>
       </div>
 
       <div class="Button_right">
-        <button type="submit" name="send"><span>Send </span><i class="material-icons">send</i></button>
+        <button type="submit" name="send"><span>Submit </span><i class="material-icons">send</i></button>
       </div>
 
       <div class="Button_left">
