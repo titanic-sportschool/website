@@ -8,7 +8,7 @@
     <form action="index.php?content=Authenticate" method="POST">
       <div>
 
-        <input type="text" placeholder="E-mail" name="username" autofocus></span><span class="Bar"></span>
+        <input type="email" placeholder="E-mail" name="username" autofocus></span><span class="Bar"></span>
       </div>
 
       <div>
