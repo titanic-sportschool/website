@@ -9,16 +9,14 @@
     'Login' => $noLogin,
     'Authenticate' => $noLogin,
     '404' => $noLogin,
-
     'Homepage' => $customer,
     'Mail' => $customer,
     'Profile' => $customer,
     'Activity' => $customer,
     'Logout' => $customer,
-
     'CustomerAdd' => $opperator,
     'CustomerAddDB' => $opperator,
-
+    'AllCustomers' => $opperator,
     'DB' => $dev,
     'Link' => $dev,
     'Navigation' => $dev,
