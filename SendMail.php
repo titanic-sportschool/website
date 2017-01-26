@@ -15,16 +15,19 @@
       $mail->Port = 587;
 
       $mail->setFrom('sportbenno@gmail.com', $_SESSION['username']);
-      $mail->addAddress('blubberbuikje@gmail.com', 'Staff Mail');
+      $mail->addAddress('bartvanstraaten@hotmail.com', 'Staff Mail');
 
       $mail->isHTML(true);
 
       $mail->Subject = $_POST['subject'];
-      $mail->Body    = $_POST['mailvalue'];
+      $mail->Body    = nl2br($_POST['mailvalue']);
 
       if(!$mail->send()) {
-          echo 'Message could not be sent.';
-          echo 'Mailer Error: ' . $mail->ErrorInfo;
+          echo '<div style="text-align:center">Message could not be sent.' . '<br>';
+          echo 'Mailer Error: ' . $mail->ErrorInfo . '</div>';
+          echo '<div class=Button_left style="display:block; margin:auto">
+                  <button onClick=location.href="index.php?content=Homepage">Home</button>
+                </div>';
       } else {
         echo '<center>Succesfully send a mail to staff<center>
               <center>Please wait while you get redirected.....<center>';
