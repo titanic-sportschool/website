@@ -90,7 +90,7 @@ input:focus ~ .Bar:before, input:focus ~ .Bar:after { width: 50%; }
 /* Homepage Style */
 
 .Home_div{
-  width: 960px;
+  width: 1060px;
   padding: 6% 0 0;
   margin: auto;
   margin-bottom: 50px;
@@ -101,7 +101,7 @@ input:focus ~ .Bar:before, input:focus ~ .Bar:after { width: 50%; }
   position: relative;
   z-index: 1;
   background: #FFFFFF;
-  width: 960px;
+  width: 1060px;
   margin: 0 auto 0px;
   padding: 30px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
@@ -131,7 +131,7 @@ nav ul li{
   display: inline-block;
   padding: 14px;
   transition: all 0.2s ease;
-  font-size: 14px;
+  font-size: 17px;
 }
 
 nav ul li:hover{
@@ -272,6 +272,7 @@ nav ul li:hover{
 
 .Radio ul li input:checked ~ label{
   color: #2196F3;
+
 }
 
 .Radio span{
@@ -280,6 +281,63 @@ nav ul li:hover{
   margin-left: 15px;
   top: 5px;
   height: 30px;
+}
+
+table tr td{
+  text-align: left;
+  font-size: 14px;
+  padding-right: 10px;
+  width: auto;
+}
+
+.Home_div .Table_input{
+  padding: 5px;
+  margin: 0;
+  background: transparent;
+  color: grey;
+  border: 0;
+}
+
+.Table_input:focus{
+  color: #2196F3;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.Home_div .Table_update{
+  background: transparent;
+  padding: 2px;
+  margin: 0;
+  width: auto;
+  height: 100%;
+  display: flex;
+}
+
+.Home_div .Table_update button{
+  background: transparent;
+  padding: 0px;
+  margin: 0;
+  width: auto;
+  height: 100%;
+}
+
+.Home_div .Table_update:hover{
+  background: transparent;
+}
+
+table tr th{
+  text-align: left;
+  font-size: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #2196F3;
+}
+
+tr:nth-child(even){background: #f2f2f2}
+
+table{
+  margin: auto;
+  margin-bottom: 20px;
+  border-spacing: 0;
+  overflow-x: auto;
 }
 
 /* Mailpage Style */
@@ -342,6 +400,7 @@ nav ul li:hover{
 
 body {
   font-family: "Roboto", sans-serif;
+  color: grey;
 }
 
 /* TESTING AREA */
