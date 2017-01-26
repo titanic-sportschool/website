@@ -22,7 +22,7 @@
     </div>
 
     <div class="Button_left">
-      <button onclick="goBack()">Back</button>
+      <button onClick="location.href='index.php?content=Homepage'">Back</button>
     </div>
 
   </div>

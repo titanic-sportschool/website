@@ -25,10 +25,6 @@
     </div>
 
     <script>
-      function goBack() {
-          window.history.back();
-      }
-
       function resizeInput() {
           $(this).attr('size', $(this).val().length);
       }
