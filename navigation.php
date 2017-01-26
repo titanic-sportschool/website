@@ -14,6 +14,7 @@
     'Profile' => $customer,
     'Activity' => $customer,
     'Logout' => $customer,
+    'SendMail' => $customer,
     'CustomerAdd' => $opperator,
     'CustomerAddDB' => $opperator,
     'AllCustomers' => $opperator,
