@@ -3,13 +3,13 @@
 
     <form action="index.php?content=CustomerAddDB" method="POST">
 
-      <div><input type="text" autocomplete="off" name="firstname" placeholder="Firstname" autofocus required></span><span class="Bar"></span></div>
+      <div><input type="text" autocomplete="off" name="firstname" placeholder="Firstname" autofocus></span><span class="Bar"></span></div>
       <div><input type="text" autocomplete="off" name="tussenvoegsel" placeholder="Tussenvoegsel"></span><span class="Bar"></span></div>
-      <div><input type="text" autocomplete="off" name="lastname" placeholder="Lastname" required></span><span class="Bar"></span></div>
-      <div><input type="text" autocomplete="off" name="address" placeholder="Address" required></span><span class="Bar"></span></div>
-      <div><input type="text" autocomplete="off" name="postal" placeholder="Postal code" required></span><span class="Bar"></span></div>
-      <div><input type="text" autocomplete="off" name="city" placeholder="City" required></span><span class="Bar"></span></div>
-      <div><input type="text" autocomplete="off" name="bankinfo" placeholder="Bank information" required></span><span class="Bar"></span></div>
+      <div><input type="text" autocomplete="off" name="lastname" placeholder="Lastname"></span><span class="Bar"></span></div>
+      <div><input type="text" autocomplete="off" name="address" placeholder="Address"></span><span class="Bar"></span></div>
+      <div><input type="text" autocomplete="off" name="postal" placeholder="Postal code"></span><span class="Bar"></span></div>
+      <div><input type="text" autocomplete="off" name="city" placeholder="City"></span><span class="Bar"></span></div>
+      <div><input type="text" autocomplete="off" name="bankinfo" placeholder="Bank information"></span><span class="Bar"></span></div>
 
       <div class="Radio">
         <span>Membership:</span>
@@ -36,18 +36,17 @@
       </div>
 
       <div>
-        <input type="email" autocomplete="off" name="email" placeholder="E-mail" required></span><span class="Bar"></span>
+        <input type="email" autocomplete="off" name="email" placeholder="E-mail"></span><span class="Bar"></span>
       </div>
 
       <div class="Button_right">
         <button type="submit" name="send"><span>Submit </span><i class="material-icons">send</i></button>
       </div>
 
-      <div class="Button_left">
-        <button onclick="goBack()">Back</button>
-      </div>
-
     </form>
+    <div class="Button_left">
+      <button onClick="location.href='index.php?content=Homepage'">Back</button>
+    </div>
 
   </div>
 </div>
