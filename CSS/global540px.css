@@ -5,12 +5,16 @@
     height: auto;
   }
 
-  .Login_form{
-    width: 70%;
+  .Home_div{
+    font-size: 16px;
   }
 
   .Home{
     padding: 25px;
+  }
+
+  .New_user_form{
+    width: 100%;
   }
 
   .Mail{
