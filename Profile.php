@@ -1,9 +1,3 @@
-<?php
-
-  include('RequireLogin.php')
-
-?>
-
 <div class="Home_div">
   <div class="Home">
     <div>
