@@ -1,8 +1,6 @@
 <div class="Home_div">
   <div class="Home">
     <?php
-
-      include('RequireLogin.php');
       include('DB.php');
 
       $firstname = $_POST['firstname'];
@@ -13,14 +11,24 @@
       $city = $_POST['city'];
       $bank = $_POST['bankinfo'];
 
+      $membership = $_POST['membership'];
+
+      if(isset($membership) && $membership == 'bronze'){
+        $membershipID = 1;
+      } elseif (isset($membership) && $membership == 'silver') {
+        $membershipID = 2;
+      } elseif (isset($membership) && $membership == 'gold') {
+        $membershipID = 3;
+      }
+
       $email = $_POST['email'];
       $password = sha1('Welkom01', false);
 
       $regdate = date("Y-m-d");
 
       $userquerie = "
-      INSERT INTO User (Firstname, Tussenvoegsel, Lastname, Address, Zip_code, City, Register_date, Membership_ID)
-        VALUES ('$firstname', '$tussenvoegsel', '$lastname', '$address', '$postal', '$city', '$regdate', '1')";
+      INSERT INTO User (Firstname, Tussenvoegsel, Lastname, Address, Zip_code, City, Bank_info, Register_date, Membership_ID)
+        VALUES ('$firstname', '$tussenvoegsel', '$lastname', '$address', '$postal', '$city', '$bank', '$regdate', $membershipID)";
 
       $result = mysqli_query($db, $userquerie);
 
@@ -40,8 +48,6 @@
       } else {
         echo '<center>An error has occured.<center><br>' . mysqli_error($db);
       }
-
-      mysqli_close($db);
 
     ?>
   </div>

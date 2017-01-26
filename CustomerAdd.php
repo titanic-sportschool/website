@@ -1,27 +1,21 @@
-<?php
-
-  include('RequireLogin.php')
-
-?>
-
 <div class="Home_div">
   <div class="New_user_form">
 
     <form action="index.php?content=CustomerAddDB" method="POST">
 
-      <div><input type="text" name="firstname" placeholder="Firstname" autofocus required></span><span class="Bar"></span></div>
-      <div><input type="text" name="tussenvoegsel" placeholder="Tussenvoegsel"></span><span class="Bar"></span></div>
-      <div><input type="text" name="lastname" placeholder="Lastname" required></span><span class="Bar"></span></div>
-      <div><input type="text" name="address" placeholder="Address" required></span><span class="Bar"></span></div>
-      <div><input type="text" name="postal" placeholder="Postal code" required></span><span class="Bar"></span></div>
-      <div><input type="text" name="city" placeholder="City" required></span><span class="Bar"></span></div>
-      <div><input type="text" name="bankinfo" placeholder="Bank information" required></span><span class="Bar"></span></div>
+      <div><input type="text" autocomplete="off" name="firstname" placeholder="Firstname" autofocus required></span><span class="Bar"></span></div>
+      <div><input type="text" autocomplete="off" name="tussenvoegsel" placeholder="Tussenvoegsel"></span><span class="Bar"></span></div>
+      <div><input type="text" autocomplete="off" name="lastname" placeholder="Lastname" required></span><span class="Bar"></span></div>
+      <div><input type="text" autocomplete="off" name="address" placeholder="Address" required></span><span class="Bar"></span></div>
+      <div><input type="text" autocomplete="off" name="postal" placeholder="Postal code" required></span><span class="Bar"></span></div>
+      <div><input type="text" autocomplete="off" name="city" placeholder="City" required></span><span class="Bar"></span></div>
+      <div><input type="text" autocomplete="off" name="bankinfo" placeholder="Bank information" required></span><span class="Bar"></span></div>
 
       <div class="Radio">
         <span>Membership:</span>
         <ul>
           <li>
-            <input type="radio" id="option1" name="membership" value="bronze">
+            <input type="radio" id="option1" name="membership" value="bronze" checked>
             <label for="option1">Bronze</label>
 
             <div class="check"><div class="inside"></div></div>
@@ -40,9 +34,9 @@
           </li>
         </ul>
       </div>
-      
+
       <div>
-        <input type="email" name="email" placeholder="E-mail" required></span><span class="Bar"></span>
+        <input type="email" autocomplete="off" name="email" placeholder="E-mail" required></span><span class="Bar"></span>
       </div>
 
       <div class="Button_right">
