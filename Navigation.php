@@ -13,6 +13,7 @@
     'Mail' => $customer,
     'Profile' => $customer,
     'Activity' => $customer,
+    'Advice' => $customer,
     'Logout' => $customer,
     'SendMail' => $customer,
     'ChangePW' => $customer,
@@ -38,7 +39,7 @@
       header('Location: index.php?content=Login');
     }
 	} else {
-		include("login.php");
+		include("Login.php");
 	}
 
  ?>
