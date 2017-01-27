@@ -26,7 +26,7 @@
       $_SESSION['User_role'] = $User_role;
       header("Location: index.php?content=Homepage");
     } else {
-      header("Location: /IDP%20website/");
+      header("Location: index.php");
       session_destroy();
     }
   }
