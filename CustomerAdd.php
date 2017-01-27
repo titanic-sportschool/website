@@ -3,13 +3,13 @@
 
     <form action="index.php?content=CustomerAddDB" method="POST">
 
-      <div><input type="text" autocomplete="off" name="firstname" placeholder="Firstname" autofocus></span><span class="Bar"></span></div>
-      <div><input type="text" autocomplete="off" name="tussenvoegsel" placeholder="Tussenvoegsel"></span><span class="Bar"></span></div>
-      <div><input type="text" autocomplete="off" name="lastname" placeholder="Lastname"></span><span class="Bar"></span></div>
-      <div><input type="text" autocomplete="off" name="address" placeholder="Address"></span><span class="Bar"></span></div>
-      <div><input type="text" autocomplete="off" name="postal" placeholder="Postal code"></span><span class="Bar"></span></div>
-      <div><input type="text" autocomplete="off" name="city" placeholder="City"></span><span class="Bar"></span></div>
-      <div><input type="text" autocomplete="off" name="bankinfo" placeholder="Bank information"></span><span class="Bar"></span></div>
+      <div><input type="text" autocomplete="off" name="firstname" placeholder="Firstname" autofocus><span class="Bar"></span></div>
+      <div><input type="text" autocomplete="off" name="tussenvoegsel" placeholder="Tussenvoegsel"><span class="Bar"></span></div>
+      <div><input type="text" autocomplete="off" name="lastname" placeholder="Lastname"><span class="Bar"></span></div>
+      <div><input type="text" autocomplete="off" name="address" placeholder="Address"><span class="Bar"></span></div>
+      <div><input type="text" autocomplete="off" name="postal" placeholder="Postal code"><span class="Bar"></span></div>
+      <div><input type="text" autocomplete="off" name="city" placeholder="City"><span class="Bar"></span></div>
+      <div><input type="text" autocomplete="off" name="bankinfo" placeholder="Bank information"><span class="Bar"></span></div>
 
       <div class="Radio">
         <span>Membership:</span>

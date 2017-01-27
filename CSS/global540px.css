@@ -17,6 +17,10 @@
     width: 100%;
   }
 
+  .Profile_div{
+    width: 100%
+  }
+
   .Mail{
     height: 250px;
   }
@@ -30,4 +34,10 @@
     width: 100%;
     display: inline-block;
   }
+
+  .Profile_div .Button_left, .Profile_div .Button_right{
+    width: 100%;
+    display: inline-block;
+  }
+
 }

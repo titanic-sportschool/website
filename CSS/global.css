@@ -68,6 +68,8 @@ img.Avatar{
   transition: background 0.5s ease;
 }
 
+/*Input bottom bar style*/
+
 .Bar {
 	position: relative;
 	display: block;
@@ -192,25 +194,58 @@ nav ul li:hover{
   transition: background 0.5s ease;
 }
 
-.Home_div button {
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  outline: 0;
-  background: #ffffff;
-  width: 100%;
-  border: 0;
-  padding: 15px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  color: #2196F3;
-  font-size: 14px;
-  transition: all 0.2s ease;
-  cursor: pointer;
+/*Profile page style*/
+
+.Profile_div{
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  width: 540px;
+  margin: 0 auto 0px;
+  padding: 30px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
-.Home_div button:hover{
-  background: #f2f2f2;
-  /*box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.24);*/
+.Profile{
+  width: auto;
+}
+
+.Profile img{
+  float: right;
+  width: 20%;
+  border-radius: 50%;
+  position: absolute;
+  right: 25px;
+}
+
+.Profile .Profile_input{
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    color: grey;
+    border: 0;
+    font-size: 16px;
+    width: auto;
+}
+
+.Profile_input:focus{
+  color: #2196F3;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.Profile i{
+  color: #2196F3;
+  float: right;
+}
+
+p{
+  font-size: 12px;
+  margin-bottom: 30px;
+  color: red;
+}
+
+b{
+  display: block;
 }
 
 /*Add new users style*/
@@ -305,6 +340,8 @@ nav ul li:hover{
   height: 30px;
 }
 
+/*All user page style*/
+
 table tr td{
   text-align: left;
   font-size: 14px;
@@ -380,6 +417,28 @@ table{
   transition: height 0.5s ease-in-out;
 }
 
+/*Button styling*/
+
+.Home_div button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #ffffff;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #2196F3;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.Home_div button:hover{
+  background: #f2f2f2;
+}
+
 .Button_left{
   width: 20%;
   display: inline-block;
@@ -389,10 +448,6 @@ table{
 .Button_left button, .Button_right button{
   width: 100%;
   padding: 18px;
-}
-
-.New_user_form .Button_left, .New_user_form .Button_right{
-  width: 40%;
 }
 
 .Button_right{
@@ -416,6 +471,14 @@ table{
 
 .Button_right:hover i{
   padding-left: 15px;
+}
+
+.New_user_form .Button_left, .New_user_form .Button_right{
+  width: 40%;
+}
+
+.Profile_div .Button_left, .Profile_div .Button_right{
+  width: 40%;
 }
 
 /* Main */

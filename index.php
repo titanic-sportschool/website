@@ -25,6 +25,9 @@
     </div>
 
     <script>
+
+    // Auto resize inputs
+
       function resizeInput() {
           $(this).attr('size', $(this).val().length);
       }
@@ -33,7 +36,9 @@
           .keyup(resizeInput)
           .each(resizeInput);
 
-      $('td input').on({
+    // Dubble click to focus input
+
+      $('td input, .Profile input').on({
         focus: function() {
             if (!$(this).data('disabled')) this.blur()
         },
