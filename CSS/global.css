@@ -379,7 +379,6 @@ b{
 }
 
 table tr th{
-  padding: 0;
   text-align: left;
   font-size: 15px;
   padding-bottom: 15px;
@@ -387,7 +386,6 @@ table tr th{
 }
 
 table tr td{
-  padding: 0;
   text-align: left;
   font-size: 14px;
   width: auto;
@@ -502,6 +500,11 @@ table{
 
 .Log tr td{
   padding: 10px;
+}
+
+.Log tr th{
+  padding: 10px;
+  padding-bottom: 20px;
 }
 
 /* Main */
