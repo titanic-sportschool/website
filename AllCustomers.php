@@ -45,7 +45,7 @@
               WHERE User.Membership_ID = Membership.ID
                 AND User.ID = Login.User_ID
                 AND Login.User_role_ID = 1
-              ORDER BY Firstname";
+              ORDER BY Lastname";
 
       $result = mysqli_query($db, $sql);
 
