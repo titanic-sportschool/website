@@ -15,6 +15,8 @@
     'Activity' => $customer,
     'Logout' => $customer,
     'SendMail' => $customer,
+    'ChangePW' => $customer,
+    'ConfirmPW' => $customer,
     'CustomerAdd' => $opperator,
     'CustomerAddDB' => $opperator,
     'AllCustomers' => $opperator,
