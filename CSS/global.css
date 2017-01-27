@@ -342,23 +342,18 @@ b{
 
 /*All user page style*/
 
-table tr td{
-  text-align: left;
-  font-size: 14px;
-  padding-right: 10px;
-  width: auto;
-}
-
 .Home_div .Table_input{
   padding: 5px;
   margin: 0;
   background: transparent;
   color: grey;
   border: 0;
+  cursor: pointer;
 }
 
 .Table_input:focus{
   color: #2196F3;
+  cursor: auto;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
@@ -384,10 +379,18 @@ table tr td{
 }
 
 table tr th{
+  padding: 0;
   text-align: left;
   font-size: 15px;
   padding-bottom: 15px;
   border-bottom: 1px solid #2196F3;
+}
+
+table tr td{
+  padding: 0;
+  text-align: left;
+  font-size: 14px;
+  width: auto;
 }
 
 tr:nth-child(even){background: #f2f2f2}
@@ -479,6 +482,26 @@ table{
 
 .Profile_div .Button_left, .Profile_div .Button_right{
   width: 40%;
+}
+
+.Log_div .Button_left, .Log_div .Button_right{
+  width: 40%;
+}
+
+/*Customer Log page style*/
+
+.Log_div{
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  width: 630px;
+  margin: 0 auto 0px;
+  padding: 30px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.Log tr td{
+  padding: 10px;
 }
 
 /* Main */

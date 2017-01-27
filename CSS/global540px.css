@@ -21,6 +21,10 @@
     width: 100%
   }
 
+  .Log_div{
+    width: 100%;
+  }
+
   .Mail{
     height: 250px;
   }
@@ -36,6 +40,11 @@
   }
 
   .Profile_div .Button_left, .Profile_div .Button_right{
+    width: 100%;
+    display: inline-block;
+  }
+
+  .Log_div .Button_left, .Log_div .Button_right{
     width: 100%;
     display: inline-block;
   }
