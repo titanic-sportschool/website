@@ -20,6 +20,7 @@
     'ConfirmPW' => $customer,
     'CustomerAdd' => $opperator,
     'CustomerAddDB' => $opperator,
+    'CustomerLog' => $opperator,
     'AllCustomers' => $opperator,
     'DB' => $dev,
     'Link' => $dev,
