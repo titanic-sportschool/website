@@ -58,6 +58,7 @@
               <th>City</th>
               <th>Bank info</th>
               <th>Membership</th>
+              <th></th>
             </tr>";
 
       while($row = mysqli_fetch_array($result)){
@@ -70,13 +71,13 @@
         echo '<td><input autocomplete="off" class="Table_input" type="text" name="city" value="' . $row['City'] . '"></td>';
         echo '<td><input autocomplete="off" class="Table_input" type="text" name="bank" value="' . $row['Bank_info'] . '"></td>';
         echo '<td><input autocomplete="off" class="Table_input" type="text" name="membership" value="' . $row['Type'] . '"></td>';
-        echo '<td><input hidden name="pk" value="' . $row['User_ID'] . '"></td>';
         echo '<td>
                 <div class="Table_update">
                   <button type="submit" name="update"><i class="material-icons">mode_edit</i></button>
                   <button type="submit" name="delete"><i class="material-icons">delete</i></button>
                 </div>
               </td>
+              <td><input hidden name="pk" value="' . $row['User_ID'] . '"></td>
               </form>
               </tr>';
       }
