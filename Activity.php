@@ -7,7 +7,8 @@
       $sql = "SELECT *
               FROM Equipment, Equipment_used
               WHERE Equipment.ID = Equipment_used.Equipment_ID
-              And User_ID = '$_SESSION[User_ID]' ";
+              And User_ID = '$_SESSION[User_ID]'
+              ORDER BY Date asc";
 
       $result = mysqli_query($db, $sql);
 
