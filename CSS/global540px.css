@@ -25,6 +25,10 @@
     width: 100%;
   }
 
+  .Activity_div{
+    width: 100%;
+  }
+
   .Mail{
     height: 250px;
   }
@@ -45,6 +49,11 @@
   }
 
   .Log_div .Button_left, .Log_div .Button_right{
+    width: 100%;
+    display: inline-block;
+  }
+
+  .Activity_div .Button_left, .Activity_div .Button_right{
     width: 100%;
     display: inline-block;
   }

@@ -395,6 +395,14 @@ table tr td{
 
 tr:nth-child(even){background: #f2f2f2}
 
+tr:nth-child(1):hover{
+  background: #ffffff;
+}
+
+tr:hover{
+  background: #dbdbdb;
+}
+
 table{
   margin: auto;
   margin-bottom: 20px;
@@ -440,6 +448,10 @@ table{
 
 .Home_div button:hover{
   background: #f2f2f2;
+}
+
+.Table_update button:hover{
+  background: transparent;
 }
 
 .Button_left{
@@ -488,6 +500,10 @@ table{
   width: 40%;
 }
 
+.Activity_div .Button_left, .Activity_div .Button_right{
+  width: 40%;
+}
+
 /*Customer Log page style*/
 
 .Log_div{
@@ -500,11 +516,21 @@ table{
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
-.Log tr td{
+.Activity_div{
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  width: 480px;
+  margin: 0 auto 0px;
+  padding: 30px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.Log tr td, .Activ tr td{
   padding: 10px;
 }
 
-.Log tr th{
+.Log tr th, .Activ tr th{
   padding: 10px;
   padding-bottom: 20px;
 }

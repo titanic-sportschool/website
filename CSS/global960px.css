@@ -11,6 +11,10 @@
     width: 100%;
   }
 
+  .Activity_div{
+    width: 100%;
+  }
+
   .Content{
     padding: 0;
   }
@@ -94,7 +98,7 @@
   td:nth-of-type(6):before { content: "Bank info"; }
   td:nth-of-type(7):before { content: "Membership"; }
 
-  .Log tr td{
+  .Log tr td, .Activ tr td{
     padding-left: 40%;
   }
 
@@ -103,5 +107,10 @@
   .Log td:nth-of-type(3):before { content: "Date"; top: 10px;}
   .Log td:nth-of-type(4):before { content: "Check-in/out"; top: 10px;}
   .Log td:nth-of-type(5):before { content: "Location"; top: 10px;}
+
+  .Activ td:nth-of-type(1):before { content: "Date"; top: 10px;}
+  .Activ td:nth-of-type(2):before { content: "Time (min)"; top: 10px;}
+  .Activ td:nth-of-type(3):before { content: "Equipment"; top: 10px;}
+  .Activ td:nth-of-type(4):before { content: "Calories"; top: 10px;}
 
 }
