@@ -16,7 +16,7 @@
               <tr>
               <th>Datum</th>
               <th>Tijd (min)</th>
-              <th>Apparaten</th>
+              <th>Apparaat</th>
               <th>Calorieën</th>
             </tr>';
 
