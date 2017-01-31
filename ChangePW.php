@@ -8,14 +8,14 @@
         <div><input type="password" name="newpwcheck" placeholder="Repeat new password"><span class="Bar"></span></div>
 
         <div class="Button_right">
-          <button type="submit" name="confirm">Confirm</button>
+          <button type="submit" name="confirm">Bevestig</button>
         </div>
       </form>
 
       <div class="Button_left">
-        <button name="back" onClick="location.href='index.php?content=Profile'">Back</button>
+        <button name="back" onClick="location.href='index.php?content=Profile'">Terug</button>
       </div>
-      
+
     </div>
   </div>
 </div>

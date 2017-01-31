@@ -14,10 +14,10 @@
 
       echo '<table class="Activ">
               <tr>
-              <th>Date</th>
-              <th>Time (min)</th>
-              <th>Equipment</th>
-              <th>Calories</th>
+              <th>Datum</th>
+              <th>Tijd (min)</th>
+              <th>Apparaten</th>
+              <th>Calorieën</th>
             </tr>';
 
       while($row = mysqli_fetch_array($result)){
@@ -34,7 +34,7 @@
     ?>
 
     <div class="Button_left">
-      <button onClick="location.href='index.php?content=Homepage'">Back</button>
+      <button onClick="location.href='index.php?content=Homepage'">Terug</button>
     </div>
 
   </div>

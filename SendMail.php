@@ -23,14 +23,14 @@
       $mail->Body    = nl2br($_POST['mailvalue']);
 
       if(!$mail->send()) {
-          echo '<div style="text-align:center">Message could not be sent.' . '<br>';
+          echo '<div style="text-align:center">Bericht is niet verzonden.' . '<br>';
           echo 'Mailer Error: ' . $mail->ErrorInfo . '</div>';
           echo '<div class=Button_left style="display:block; margin:auto">
                   <button onClick=location.href="index.php?content=Homepage">Home</button>
                 </div>';
       } else {
-        echo '<center>Succesfully send a mail to staff<center>
-              <center>Please wait while you get redirected.....<center>';
+        echo '<center>Het bericht is verzonden naar een medewerker<center>
+              <center>Een moment gedult voor u word doorgestuurd.....<center>';
         header('Refresh: 3; index.php?content=Homepage');
       }
 

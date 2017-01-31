@@ -5,12 +5,12 @@
       <input autocomplete="off" type="text" placeholder="Subject" name="subject" autofocus></span><span class="Bar"></span>
       <textarea type="text" placeholder="Message" name="mailvalue" class="Mail"></textarea>
       <div class="Button_right">
-        <button type="submit" name="send"><span>Send </span><i class="material-icons">send</i></button>
+        <button type="submit" name="send"><span>Versturen </span><i class="material-icons">send</i></button>
       </div>
     </form>
 
     <div class="Button_left">
-      <button onClick="location.href='index.php?content=Homepage'">Back</button>
+      <button onClick="location.href='index.php?content=Homepage'">Terug</button>
     </div>
 
   </div>

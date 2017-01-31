@@ -38,7 +38,7 @@
 
     // Dubble click to focus input
 
-      $('td input, .Profile input').on({
+      $('td input[type=text], .Profile input[type=text]').on({
         focus: function() {
             if (!$(this).data('disabled')) this.blur()
         },

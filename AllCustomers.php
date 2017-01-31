@@ -49,15 +49,17 @@
 
       $result = mysqli_query($db, $sql);
 
+      $msg = 'Are you sure?';
+
       echo "<table>
               <tr>
               <th>E-mail</th>
-              <th>Name</th>
-              <th>Address</th>
-              <th>Postal</th>
-              <th>City</th>
+              <th>Naam</th>
+              <th>Adres</th>
+              <th>Postcode</th>
+              <th>Stad</th>
               <th>Bank info</th>
-              <th>Membership</th>
+              <th>Lidmaatschap</th>
               <th></th>
             </tr>";
 
@@ -74,7 +76,7 @@
         echo '<td>
                 <div class="Table_update">
                   <button type="submit" name="update"><i class="material-icons">mode_edit</i></button>
-                  <button type="submit" name="delete"><i class="material-icons">delete</i></button>
+                  <button type="submit" name="delete" onclick="return checkDelete()"><i class="material-icons">delete</i></button>
                 </div>
               </td>
               <td><input hidden name="pk" value="' . $row['User_ID'] . '"></td>
@@ -86,8 +88,13 @@
     ?>
 
     <div class="Button_left">
-      <button onClick="location.href='index.php?content=Homepage'">Back</button>
+      <button onClick="location.href='index.php?content=Homepage'">Terug</button>
     </div>
 
   </div>
 </div>
+<script language="JavaScript" type="text/javascript">
+  function checkDelete(){
+      return confirm('Are you sure you want to delete this user?');
+  }
+</script>

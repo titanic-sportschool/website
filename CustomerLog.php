@@ -43,7 +43,7 @@
     ?>
 
     <div class="Button_left">
-      <button onClick="location.href='index.php?content=Homepage'">Back</button>
+      <button onClick="location.href='index.php?content=Homepage'">Terug</button>
     </div>
 
   </div>

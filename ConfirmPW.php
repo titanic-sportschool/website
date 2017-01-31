@@ -27,15 +27,15 @@
 
       if($row['Password'] == $oldpw && strlen($newpw) > 4 && $newpw == $newpwcheck){
         mysqli_query($db, $updatepwsql);
-        echo '<center>Succesfully changed your password!<center>
-              <center>Please wait while you get redirected.....<center>';
+        echo '<center>Uw wachtwoord is veranderd!<center>
+              <center>Een moment gedult voor u word doorgestuurd<center>';
         header('Refresh: 3; index.php?content=Profile');
       } elseif(strlen($newpw) < 4 && $newpw == $newpwcheck){
-        echo '<center>New password must be atleast 4 characters long.</center>';
+        echo '<center>Het nieuwe wachtwoord moet minstens 4 karakters hebben.</center>';
         header('Refresh: 3; index.php?content=ChangePW');
       } else {
-        echo '<center>Old or new passwords did not match.<center
-              <center>Please wait while you get redirected.....<center>';
+        echo '<center>Het nieuwe of oude wachtwoord kwam niet overeen.<center
+              <center>Een moment gedult voor u word doorgestuurd<center>';
         header('Refresh: 3; index.php?content=ChangePW');
       }
 

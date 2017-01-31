@@ -54,9 +54,9 @@
         echo "<b>Kind of membership: </b>" . $membership . '<br><br>';
         echo "<b>Bank info: </b>" . $bank . '<br><br>';
 
-        echo '<p>*Dubble click the value you want to change<br>
-                *Once changed press update to confirm changes.<br>
-                *Users can only change name and address, for other changes contact our staff.
+        echo '<p>*Dubbel klik de waarde die u wil veranderen.<br>
+                *Als u klaar bent met aanpassen klik update.<br>
+                *Leden kunnen alleen hun naam en adres veranderen, voor verdere aanpassingen aub een medewerker contacteren.
               </p>';
 
         echo '<div class="Button_left">
@@ -67,13 +67,13 @@
       ?>
 
       <form class="Button_right" action="index.php?content=ChangePW" method="POST">
-        <button type="submit" name="change">Change password</button>
+        <button type="submit" name="change">Wachtwoord veranderen</button>
       </form>
 
     </div>
 
     <div class="Button_left">
-      <button name="back" onClick="location.href='index.php?content=Homepage'">Back</button>
+      <button name="back" onClick="location.href='index.php?content=Homepage'">Terug</button>
     </div>
 
   </div>

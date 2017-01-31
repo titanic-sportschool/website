@@ -42,11 +42,11 @@
 
 
       if($result){
-        echo '<center>Succesfully added user to the database!<center>
-              <center>Please wait while you get redirected.....<center>';
+        echo '<center>Nieuwe gebruiker is toegevoegd aan de database!<center>
+              <center>Een moment gedult voor u word doorgestuurd.....<center>';
         header('Refresh: 3; index.php?content=Homepage');
       } else {
-        echo '<center>An error has occured.<center><br>' . mysqli_error($db);
+        echo '<center>Er is iets misgegaan.<center><br>' . mysqli_error($db);
       }
 
     ?>
