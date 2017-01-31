@@ -95,6 +95,6 @@
 </div>
 <script language="JavaScript" type="text/javascript">
   function checkDelete(){
-      return confirm('Are you sure you want to delete this user?');
+      return confirm('Weet je zeker dat je deze gebruiker wil verwijderen?');
   }
 </script>
