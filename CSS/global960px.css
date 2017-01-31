@@ -91,26 +91,26 @@
   }
 
   td:nth-of-type(1):before { content: "E-mail"; }
-  td:nth-of-type(2):before { content: "Name"; }
-  td:nth-of-type(3):before { content: "Address"; }
-  td:nth-of-type(4):before { content: "Postal"; }
-  td:nth-of-type(5):before { content: "City"; }
-  td:nth-of-type(6):before { content: "Bank info"; }
-  td:nth-of-type(7):before { content: "Membership"; }
+  td:nth-of-type(2):before { content: "Naam"; }
+  td:nth-of-type(3):before { content: "Adres"; }
+  td:nth-of-type(4):before { content: "Postcode"; }
+  td:nth-of-type(5):before { content: "Stad"; }
+  td:nth-of-type(6):before { content: "Bank informatie"; }
+  td:nth-of-type(7):before { content: "Lidmaatschap"; }
 
   .Log tr td, .Activ tr td{
     padding-left: 40%;
   }
 
-  .Log td:nth-of-type(1):before { content: "Date"; top: 10px;}
-  .Log td:nth-of-type(2):before { content: "Membership"; top: 10px;}
-  .Log td:nth-of-type(3):before { content: "Date"; top: 10px;}
+  .Log td:nth-of-type(1):before { content: "Datum"; top: 10px;}
+  .Log td:nth-of-type(2):before { content: "Naam"; top: 10px;}
+  .Log td:nth-of-type(3):before { content: "Lidmaatschap"; top: 10px;}
   .Log td:nth-of-type(4):before { content: "Check-in/out"; top: 10px;}
-  .Log td:nth-of-type(5):before { content: "Location"; top: 10px;}
+  .Log td:nth-of-type(5):before { content: "Locatie"; top: 10px;}
 
-  .Activ td:nth-of-type(1):before { content: "Date"; top: 10px;}
-  .Activ td:nth-of-type(2):before { content: "Time (min)"; top: 10px;}
-  .Activ td:nth-of-type(3):before { content: "Equipment"; top: 10px;}
-  .Activ td:nth-of-type(4):before { content: "Calories"; top: 10px;}
+  .Activ td:nth-of-type(1):before { content: "Datum"; top: 10px;}
+  .Activ td:nth-of-type(2):before { content: "Tijd (min)"; top: 10px;}
+  .Activ td:nth-of-type(3):before { content: "Apparaat"; top: 10px;}
+  .Activ td:nth-of-type(4):before { content: "Calorieën"; top: 10px;}
 
 }

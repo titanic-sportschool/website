@@ -250,6 +250,10 @@ b{
   display: block;
 }
 
+.Log_div b{
+  display: inline;
+}
+
 /*Add new users style*/
 
 .New_user_form{
@@ -540,6 +544,11 @@ table{
 body {
   font-family: "Roboto", sans-serif;
   color: grey;
+}
+
+hr{
+  border: 0;
+  border-top: 2px solid #2196F3;
 }
 
 /* TESTING AREA */
