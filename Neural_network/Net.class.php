@@ -62,7 +62,7 @@ class Net {
     // Export net to file
     public function export($fileName) {
         try {
-            $fp = fopen('nets/' . $fileName . '.json', 'w');
+            $fp = fopen($fileName . '.json', 'w');
             fwrite($fp, json_encode($this->m_layers, JSON_PRETTY_PRINT));
             fclose($fp);
         } catch (Exception $e) {

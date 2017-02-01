@@ -76,20 +76,20 @@ $avgCaloriesWomen = $totalCaloriesWomen / $totalWomen;
 // START NEURALNETWORK
 include_once("/Net.class.php");
 
-$fileName = 'Advisor';
+$fileName = './nets/Advisor';
 
 $net = new Net();
-// $topology = [];
-// array_push($topology, 4);
-// array_push($topology, 3);
-// array_push($topology, 3);
-// $net->create($topology);
-$net->import($fileName); // Load net
+$topology = [];
+array_push($topology, 4);
+array_push($topology, 3);
+array_push($topology, 3);
+$net->create($topology);
+// $net->import($fileName); // Load net
 
 // srand(1337);
 for ($i = 1; $i <= 1337; $i++) {
-    $randomUser = $user_activities[Rand(0, count($user_activities) - 1)];
-    // $randomUser = $user_activities[$i];
+    // $randomUser = $user_activities[Rand(0, count($user_activities) - 1)];
+    $randomUser = $user_activities[3]; // 0 = efficient sporter, 3 = inefficient sporter
     $avgTime = $randomUser['Gender'] ? $avgTimeMen : $avgTimeWomen;
     $avgCalories = $randomUser['Gender'] ? $avgCaloriesMen : $avgCaloriesWomen;
 
@@ -97,7 +97,7 @@ for ($i = 1; $i <= 1337; $i++) {
     $inputVals = [];
     array_push($inputVals, $randomUser['Gender']);
     array_push($inputVals, $randomUser['Age']);
-    array_push($inputVals, $randomUser['CaloriesPerMinute']);
+    array_push($inputVals, $randomUser['TotalTime']);
     array_push($inputVals, $randomUser['TotalCalories']);
     $net->feedForward($inputVals);
 
@@ -108,7 +108,7 @@ for ($i = 1; $i <= 1337; $i++) {
     $targetVals = [];
     array_push($targetVals, ($avgTime <= $randomUser['TotalTime'] ? 1 : 0)); // 1 = Higher total time spend in gym
     array_push($targetVals, ($avgCalories <= $randomUser['TotalCalories'] ? 1 : 0)); // 1 = Higher total calories burned
-    array_push($targetVals, ($avgCalories / $avgTime <= $randomUser['TotalCalories'] / $randomUser['TotalTime'] ? 1 : 0)); // 1 = Higher calories a minute
+    array_push($targetVals, ($avgCalories / $avgTime <= $randomUser['CaloriesPerMinute'] ? 1 : 0)); // 1 = Higher calories a minute
     $net->backProp($targetVals);
 
     echo "Pass: " . $i . " user: " . $randomUser['ID'] . " Input: ";

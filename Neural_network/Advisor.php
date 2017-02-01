@@ -6,7 +6,7 @@
 
         public function __construct() {
             $this->net = new Net();
-            $this->net->import('./Neural_network/nets/Advisor');
+            $this->net->import('./nets/Advisor');
         }
 
         public function getAdvice($gender, $age, $totalTime, $totalCalories) {
@@ -20,14 +20,14 @@
 
             // Get results
             $results = $this->net->getResults();
-            print(round($results[0]) ? 'U sport meer dan gemiddeld!' : 'U sport minder dan gemiddeld!');
+            print(round($results[0]) ? 'U sport <b>meer</b> dan gemiddeld' : 'U sport <b>minder</b> dan gemiddeld');
             echo "<br>";
-            print(round($results[1]) ? 'U verbrand gemiddeld meer calorieën' : 'U verbrand gemiddeld minder calorieën');
+            print(round($results[1]) ? 'U verbrand gemiddeld <b>meer</b> calorieën' : 'U verbrand gemiddeld <b>minder</b> calorieën');
             echo "<br>";
-            print(round($results[2]) ? 'Lekker bezig!' : 'Dat kan beter!');
+            print(round($results[2]) ? 'U verbrand gemiddeld <b>meer</b> calorieën per minuut' : 'U verbrand gemiddeld <b>minder</b> calorieën per minuut');
         }
     }
 
-    // $advisor = new Advisor();
-    // $advisor->getAdvice(1, 21, 135, 1305);
+    $advisor = new Advisor();
+    $advisor->getAdvice(0, 21, 135, 1305);
 ?>
