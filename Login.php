@@ -12,7 +12,7 @@
       </div>
 
       <div>
-        <input type="password" placeholder="Password" name="password"></span><span class="Bar"></span>
+        <input type="password" placeholder="Wachtwoord" name="password"></span><span class="Bar"></span>
       </div>
 
       <button type="submit" name="login">Login</button>

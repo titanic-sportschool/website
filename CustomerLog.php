@@ -4,6 +4,7 @@
 
       include('DB.php');
 
+      //Query to get the needed database values.
       $sql = "SELECT *
               FROM User, Membership, Log, Location
               WHERE User.Membership_ID = Membership.ID
@@ -22,6 +23,7 @@
               <th>Location</th>
             </tr>';
 
+      //Checking if 'Is_checkin' is 1 or 0 and linking a string to the value.
       while($row = mysqli_fetch_array($result)){
         if($row['Is_checkin'] == 1){
           $check = 'Check-in';
