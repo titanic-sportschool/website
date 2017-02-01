@@ -59,7 +59,7 @@
 
         echo '<p>*Dubbel klik de waarde die u wil veranderen.<br>
                 *Als u klaar bent met aanpassen klik update.<br>
-                *Leden kunnen alleen hun naam en adres veranderen, voor verdere aanpassingen aub een medewerker contacteren.
+                *Leden kunnen alleen hun naam en adres veranderen, voor verdere aanpassingen a.u.b. een medewerker contacteren.
               </p>';
 
         echo '<div class="Button_left">
