@@ -1,0 +1,229 @@
+[
+    [
+        {
+            "eta": 0.15,
+            "alpha": 0.5,
+            "m_outputval": "1",
+            "m_gradient": null,
+            "m_index": 0,
+            "m_outputWeights": [
+                {
+                    "weight": 0.97579882198553,
+                    "deltaWeight": 0
+                },
+                {
+                    "weight": 0.89184240241707,
+                    "deltaWeight": 0
+                },
+                {
+                    "weight": 0.35023041474654,
+                    "deltaWeight": 0
+                }
+            ]
+        },
+        {
+            "eta": 0.15,
+            "alpha": 0.5,
+            "m_outputval": 22,
+            "m_gradient": null,
+            "m_index": 1,
+            "m_outputWeights": [
+                {
+                    "weight": 0.7382122257149,
+                    "deltaWeight": 0
+                },
+                {
+                    "weight": 0.011291848506119,
+                    "deltaWeight": 0
+                },
+                {
+                    "weight": 0.076265755180517,
+                    "deltaWeight": 0
+                }
+            ]
+        },
+        {
+            "eta": 0.15,
+            "alpha": 0.5,
+            "m_outputval": 9.8883248730964,
+            "m_gradient": null,
+            "m_index": 2,
+            "m_outputWeights": [
+                {
+                    "weight": 0.51759392071291,
+                    "deltaWeight": 0
+                },
+                {
+                    "weight": 0.79277932065798,
+                    "deltaWeight": 0
+                },
+                {
+                    "weight": 0.52143925290689,
+                    "deltaWeight": 0
+                }
+            ]
+        },
+        {
+            "eta": 0.15,
+            "alpha": 0.5,
+            "m_outputval": 1948,
+            "m_gradient": null,
+            "m_index": 3,
+            "m_outputWeights": [
+                {
+                    "weight": 0.99316385387738,
+                    "deltaWeight": 0
+                },
+                {
+                    "weight": 0.51893673512986,
+                    "deltaWeight": 0
+                },
+                {
+                    "weight": 0.75164036988433,
+                    "deltaWeight": 0
+                }
+            ]
+        },
+        {
+            "eta": 0.15,
+            "alpha": 0.5,
+            "m_outputval": 1,
+            "m_gradient": null,
+            "m_index": 4,
+            "m_outputWeights": [
+                {
+                    "weight": 0.59993285927915,
+                    "deltaWeight": 0
+                },
+                {
+                    "weight": 0.86120181890316,
+                    "deltaWeight": 0
+                },
+                {
+                    "weight": 0.19800408948027,
+                    "deltaWeight": 0
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "eta": 0.15,
+            "alpha": 0.5,
+            "m_outputval": 1,
+            "m_gradient": 0,
+            "m_index": 0,
+            "m_outputWeights": [
+                {
+                    "weight": 0.1046735503819,
+                    "deltaWeight": 0.033917404970019
+                },
+                {
+                    "weight": 0.37891287653322,
+                    "deltaWeight": 0.033917404970019
+                },
+                {
+                    "weight": 0.48716275901427,
+                    "deltaWeight": 0.0010935250640665
+                }
+            ]
+        },
+        {
+            "eta": 0.15,
+            "alpha": 0.5,
+            "m_outputval": 1,
+            "m_gradient": 0,
+            "m_index": 1,
+            "m_outputWeights": [
+                {
+                    "weight": 0.41971612370263,
+                    "deltaWeight": 0.033917404970019
+                },
+                {
+                    "weight": 0.29562786417322,
+                    "deltaWeight": 0.033917404970019
+                },
+                {
+                    "weight": 0.42499655521166,
+                    "deltaWeight": 0.0010935250640665
+                }
+            ]
+        },
+        {
+            "eta": 0.15,
+            "alpha": 0.5,
+            "m_outputval": 1,
+            "m_gradient": 0,
+            "m_index": 2,
+            "m_outputWeights": [
+                {
+                    "weight": 0.34692947860237,
+                    "deltaWeight": 0.033917404970019
+                },
+                {
+                    "weight": 0.0027417287320736,
+                    "deltaWeight": 0.033917404970019
+                },
+                {
+                    "weight": 0.32950413906126,
+                    "deltaWeight": 0.0010935250640665
+                }
+            ]
+        },
+        {
+            "eta": 0.15,
+            "alpha": 0.5,
+            "m_outputval": 1,
+            "m_gradient": 0,
+            "m_index": 3,
+            "m_outputWeights": [
+                {
+                    "weight": 0.20419440978313,
+                    "deltaWeight": 0.033917404970019
+                },
+                {
+                    "weight": 0.39823109303152,
+                    "deltaWeight": 0.033917404970019
+                },
+                {
+                    "weight": 0.32715421383161,
+                    "deltaWeight": 0.0010935250640665
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "eta": 0.15,
+            "alpha": 0.5,
+            "m_outputval": 0.73515054438664,
+            "m_gradient": 0.12171254120188,
+            "m_index": 0,
+            "m_outputWeights": []
+        },
+        {
+            "eta": 0.15,
+            "alpha": 0.5,
+            "m_outputval": 0.73515054438664,
+            "m_gradient": 0.12171254120188,
+            "m_index": 1,
+            "m_outputWeights": []
+        },
+        {
+            "eta": 0.15,
+            "alpha": 0.5,
+            "m_outputval": 0.91613741696766,
+            "m_gradient": 0.013476065752056,
+            "m_index": 2,
+            "m_outputWeights": []
+        },
+        {
+            "eta": 0.15,
+            "alpha": 0.5,
+            "m_outputval": 1,
+            "m_gradient": 0,
+            "m_index": 3,
+            "m_outputWeights": []
+        }
+    ]
+]
