@@ -13,6 +13,21 @@
     padding: 25px;
   }
 
+  .Home_info{
+    display: block;
+  }
+
+  .Home_info .contact{
+    width: 100%;
+    text-align: center;
+  }
+
+  .Home_info .social{
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+  }
+
   .New_user_form{
     width: 100%;
   }

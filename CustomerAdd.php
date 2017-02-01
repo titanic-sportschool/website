@@ -3,13 +3,33 @@
 
     <form action="index.php?content=CustomerAddDB" method="POST">
 
-      <div><input type="text" autocomplete="off" name="firstname" placeholder="Voornaam" autofocus><span class="Bar"></span></div>
+      <div><input required type="text" autocomplete="off" name="firstname" placeholder="Voornaam" autofocus><span class="Bar"></span></div>
       <div><input type="text" autocomplete="off" name="tussenvoegsel" placeholder="Tussenvoegsel"><span class="Bar"></span></div>
-      <div><input type="text" autocomplete="off" name="lastname" placeholder="Achternaam"><span class="Bar"></span></div>
-      <div><input type="text" autocomplete="off" name="address" placeholder="Adres"><span class="Bar"></span></div>
-      <div><input type="text" autocomplete="off" name="postal" placeholder="Postcode"><span class="Bar"></span></div>
-      <div><input type="text" autocomplete="off" name="city" placeholder="Stad"><span class="Bar"></span></div>
-      <div><input type="text" autocomplete="off" name="bankinfo" placeholder="Bank info"><span class="Bar"></span></div>
+      <div><input required type="text" autocomplete="off" name="lastname" placeholder="Achternaam"><span class="Bar"></span></div>
+
+      <div class="Radio">
+        <span>Geslacht:</span>
+        <ul>
+          <li>
+            <input type="radio" id="option1" name="gender" value="female">
+            <label for="option1">Vrouw</label>
+
+            <div class="check"><div class="inside"></div></div>
+          </li>
+          <li>
+            <input type="radio" id="option2" name="gender" value="male">
+            <label for="option2">Man</label>
+
+            <div class="check"><div class="inside"></div></div>
+          </li>
+        </ul>
+      </div>
+
+      <div><input required type="date" autocomplete="off" name="birthdate" placeholder="Geboorte datum"><span class="Bar"></span></div>
+      <div><input required type="text" autocomplete="off" name="address" placeholder="Adres"><span class="Bar"></span></div>
+      <div><input required type="text" autocomplete="off" name="postal" placeholder="Postcode"><span class="Bar"></span></div>
+      <div><input required type="text" autocomplete="off" name="city" placeholder="Stad"><span class="Bar"></span></div>
+      <div><input required type="text" autocomplete="off" name="bankinfo" placeholder="Bank info"><span class="Bar"></span></div>
 
       <div class="Radio">
         <span>Lidmaatschap:</span>
@@ -36,7 +56,7 @@
       </div>
 
       <div>
-        <input type="email" autocomplete="off" name="email" placeholder="E-mail"></span><span class="Bar"></span>
+        <input required type="email" autocomplete="off" name="email" placeholder="E-mail"></span><span class="Bar"></span>
       </div>
 
       <div class="Button_right">

@@ -1,5 +1,6 @@
 <?php
 
+  //Getting 'User_role' and deciding the given links depending on the user role.
   if(isset($_SESSION['User_role'])){
 
     switch ($_SESSION['User_role']) {
