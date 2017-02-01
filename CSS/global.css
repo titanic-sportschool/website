@@ -123,6 +123,19 @@ input:focus ~ .Bar:before, input:focus ~ .Bar:after { width: 50%; }
   margin-top: 20px;
   padding: 30px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  display: flex;
+}
+
+.Home_info .contact{
+  width: 50%;
+  transition: all 0.4s ease;
+}
+
+.Home_info .social{
+  text-align: right;
+  width: 50%;
+  height: 100%;
+  transition: all 0.4s ease;
 }
 
 .Content{
@@ -194,6 +207,67 @@ nav ul li:hover{
   transition: background 0.5s ease;
 }
 
+.Home_info i{
+  font-size: 30px;
+  transition: all 0.5s ease;
+}
+
+.ion-social-twitter:hover{
+  color: #00aced;
+  cursor: pointer;
+}
+
+.ion-social-twitter:after{
+  font-size: 14px;
+  top: -5px;
+  margin-left: 10px;
+  content: "@BennoSport";
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+
+.ion-social-facebook:hover{
+  color: #3b5998;
+  cursor: pointer;
+}
+
+.ion-social-facebook:after{
+  font-size: 14px;
+  top: -5px;
+  margin-left: 27px;
+  content: "/BennoSport";
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+
+.ion-social-googleplus:hover{
+  color: #dd4b39;
+  cursor: pointer;
+}
+
+.ion-social-googleplus:after{
+  font-size: 14px;
+  top: -5px;
+  margin-left: 22px;
+  content: "BennoSport";
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+
+.ion-social-instagram-outline:hover{
+  color: #bc2a8d;
+  cursor: pointer;
+}
+
+.ion-social-instagram-outline:after{
+  font-size: 14px;
+  top: -5px;
+  margin-left: 15px;
+  content: "@BennoSport";
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+
 /*Profile page style*/
 
 .Profile_div{
@@ -244,10 +318,6 @@ p{
   font-size: 12px;
   margin-bottom: 30px;
   color: red;
-}
-
-b{
-  display: block;
 }
 
 .Log_div b{
@@ -551,6 +621,40 @@ hr{
   border-top: 2px solid #2196F3;
 }
 
+input[type=date]{
+  color: #bdbdbd;
+}
+
 /* TESTING AREA */
+
+.map{
+  cursor: pointer;
+}
+
+iframe{
+  width: 100%;
+  max-height: 0;
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s;
+}
+
+.Showing2{
+  max-height: 525px;
+  margin-top: 25px;
+  z-index: 1;
+}
+
+.Home_map{
+  position: relative;
+  z-index: 0;
+  background: #FFFFFF;
+  width: 99%;
+  height: auto;
+  margin: 0 auto 0px;
+  margin-top: -25px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  display: flex;
+}
 
 /*

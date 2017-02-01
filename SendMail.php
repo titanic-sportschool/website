@@ -2,6 +2,7 @@
   <div class="Home">
     <?php
 
+      //Importing the MAIL lib and setting the correct values.
       require 'MAIL/PHPMailerAutoload.php';
 
       $mail = new PHPMailer;
@@ -19,9 +20,11 @@
 
       $mail->isHTML(true);
 
+      //Get the text entered on the mail page.
       $mail->Subject = $_POST['subject'];
       $mail->Body    = nl2br($_POST['mailvalue']);
 
+      //Check if mail has succesfully been sent or not, and give an message accordingly. -> redirect after.
       if(!$mail->send()) {
           echo '<div style="text-align:center">Bericht is niet verzonden.' . '<br>';
           echo 'Mailer Error: ' . $mail->ErrorInfo . '</div>';

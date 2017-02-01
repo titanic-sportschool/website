@@ -3,6 +3,7 @@
     <?php
       include('DB.php');
 
+      //Getting the values given in the form.
       $firstname = $_POST['firstname'];
       $tussenvoegsel = $_POST['tussenvoegsel'];
       $lastname = $_POST['lastname'];
@@ -10,9 +11,11 @@
       $postal = $_POST['postal'];
       $city = $_POST['city'];
       $bank = $_POST['bankinfo'];
+      $birth = $_POST['birthdate'];
 
       $membership = $_POST['membership'];
 
+      //Linking a number depending on the checked form value.
       if(isset($membership) && $membership == 'bronze'){
         $membershipID = 1;
       } elseif (isset($membership) && $membership == 'silver') {
@@ -21,14 +24,26 @@
         $membershipID = 3;
       }
 
+      //Getting gender and link the value to an int for the database.
+      $gender = $_POST['gender'];
+
+      if(isset($gender) && $gender == 'female'){
+        $gender = 0;
+      } elseif(isset($gender) && $gender == 'male'){
+        $gender = 1;
+      }
+
       $email = $_POST['email'];
+
+      //Set default password to 'Welkom01'.
       $password = sha1('Welkom01', false);
 
+      //Getting the current date for the registration date.
       $regdate = date("Y-m-d");
 
       $userquerie = "
-      INSERT INTO User (Firstname, Tussenvoegsel, Lastname, Address, Zip_code, City, Bank_info, Register_date, Membership_ID)
-        VALUES ('$firstname', '$tussenvoegsel', '$lastname', '$address', '$postal', '$city', '$bank', '$regdate', $membershipID)";
+      INSERT INTO User (Firstname, Tussenvoegsel, Lastname, Gender, Birthdate, Address, Zip_code, City, Bank_info, Register_date, Membership_ID)
+        VALUES ('$firstname', '$tussenvoegsel', '$lastname', $gender, '$birth', '$address', '$postal', '$city', '$bank', '$regdate', $membershipID)";
 
       $result = mysqli_query($db, $userquerie);
 
@@ -40,7 +55,7 @@
 
       $result = mysqli_query($db, $userIDquerie);
 
-
+      //Checking if database insertion has succeeded
       if($result){
         echo '<center>Nieuwe gebruiker is toegevoegd aan de database!<center>
               <center>Een moment gedult voor u word doorgestuurd.....<center>';

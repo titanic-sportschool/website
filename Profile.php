@@ -4,6 +4,7 @@
       <?php
         include('DB.php');
 
+        //Get 'User_ID' to display the correct content for the current user.
         $userID = $_SESSION['User_ID'];
 
         $sql = "SELECT *
@@ -20,6 +21,7 @@
         $bank = $row['Bank_info'];
         $membership = $row['Type'] . ', ' . $row['Description'];
 
+        //If update is pressed updat the set values to the database.
         if(isset($_POST['update'])){
           $name = explode(" ", $_POST['name']);
           $firstname = $name[0];
@@ -36,23 +38,24 @@
                             City = '$_POST[city]'
                         WHERE ID = $userID";
           mysqli_query($db, $updatesql);
+          //Update the page after database update.
           header('Location: index.php?content=Profile');
         }
 
         echo '<img src="IMG/avatar.png">';
 
         echo '<form action="index.php?content=Profile" method="POST">';
-        echo '<b>Name: </b>
+        echo '<b>Naam: </b><br>
                 <input autocomplete="off" class="Profile_input" type="text" name="name" value="'  . $row['Firstname'] . ' ' . $row['Tussenvoegsel'] . ' ' . $row['Lastname'] . '"><br><br>';
-        echo "<b>E-mail/Username: </b>" . $email . '<br><br>';
-        echo '<b>Address: </b>
+        echo "<b>E-mail/Username: </b><br>" . $email . '<br><br>';
+        echo '<b>Adres </b><br>
                 <input autocomplete="off" class="Profile_input" type="text" name="address" value="' . $row['Address'] . '"><br>
                 <input autocomplete="off" class="Profile_input" type="text" name="postal" value="' . $row['Zip_code'] . '">
                 <input autocomplete="off" class="Profile_input" type="text" name="city" value="' . $row['City'] . '"><br><br>';
 
-        echo "<b>Register date: </b>" . $regDate . '<br><br>';
-        echo "<b>Kind of membership: </b>" . $membership . '<br><br>';
-        echo "<b>Bank info: </b>" . $bank . '<br><br>';
+        echo "<b>Registratie datum: </b><br>" . $regDate . '<br><br>';
+        echo "<b>Soort lidmaatschap: </b><br>" . $membership . '<br><br>';
+        echo "<b>Bank info: </b><br>" . $bank . '<br><br>';
 
         echo '<p>*Dubbel klik de waarde die u wil veranderen.<br>
                 *Als u klaar bent met aanpassen klik update.<br>
@@ -67,7 +70,7 @@
       ?>
 
       <form class="Button_right" action="index.php?content=ChangePW" method="POST">
-        <button type="submit" name="change">Wachtwoord veranderen</button>
+        <button style="padding: 10px;"type="submit" name="change">Wachtwoord veranderen</button>
       </form>
 
     </div>

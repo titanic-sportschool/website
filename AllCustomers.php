@@ -4,6 +4,7 @@
 
       include('DB.php');
 
+      //When delete button is pressed, deletee user.
       if(isset($_POST['delete'])){
         $deleteuser = " DELETE FROM User
                         WHERE ID = $_POST[pk]";
@@ -11,6 +12,7 @@
         header('Location: index.php?content=AllCustomers');
       }
 
+      //when update is pressed $membershipID gets an int based on the field value of membership
       if(isset($_POST['update'])){
         if($_POST['membership'] == 'Bronze'){
           $membershipID = '1';
@@ -20,12 +22,14 @@
           $membershipID = '3';
         }
 
+        //Split name into firstname tussenvoegsel and lastname.
         $name = explode(" ", $_POST['name']);
         $firstname = $name[0];
         $tussenvoegsel = array_slice($name, 1, -1);
         $tussenvoegsel = implode(" ", $tussenvoegsel);
         $lastname = $name[count($name)-1];
 
+        //When update button is pressed, update values linked to user.
         $updatesql = "UPDATE User
                       SET Firstname = '$firstname',
                           Tussenvoegsel = '$tussenvoegsel',
@@ -40,6 +44,7 @@
         header('Location: index.php?content=AllCustomers');
       }
 
+      //query to get all the usefull data for the user table
       $sql = "SELECT *
               FROM User, Membership, Login
               WHERE User.Membership_ID = Membership.ID
@@ -48,8 +53,6 @@
               ORDER BY Lastname";
 
       $result = mysqli_query($db, $sql);
-
-      $msg = 'Are you sure?';
 
       echo "<table>
               <tr>
@@ -94,6 +97,7 @@
   </div>
 </div>
 <script language="JavaScript" type="text/javascript">
+  //User needs to confirm before deleting database entry
   function checkDelete(){
       return confirm('Weet je zeker dat je deze gebruiker wil verwijderen?');
   }
