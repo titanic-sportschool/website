@@ -268,6 +268,10 @@ nav ul li:hover{
   font-family: "Roboto", sans-serif;
 }
 
+.contact i{
+  color: #2196F3
+}
+
 /*Location map style*/
 
 .map{
